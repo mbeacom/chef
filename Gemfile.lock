@@ -1,4 +1,36 @@
 GIT
+  remote: https://github.com/chef/chef_core
+  revision: abc01d407fda5873b1f5f5f5e812b7d68be2c588
+  branch: chef-core-split
+  specs:
+    chef_core (0.0.1)
+      chef-telemetry
+      mixlib-log
+      r18n-desktop
+      train (~> 2.0)
+
+GIT
+  remote: https://github.com/chef/chef_core-actions
+  revision: 988b0ba93ddf09b68395ca1a0cfe6ce387303684
+  branch: chef-core-split
+  specs:
+    chef_core-actions (0.0.1)
+      chef-config
+      chef_core
+
+GIT
+  remote: https://github.com/chef/chef_core-cliux
+  revision: c4d78a45d55ce3bca3372d3801dfeabb1c70c2c2
+  branch: chef-core-split
+  specs:
+    chef_core-cliux (0.0.1)
+      chef_core
+      pastel
+      tty-color
+      tty-cursor
+      tty-spinner
+
+GIT
   remote: https://github.com/chef/chefstyle.git
   revision: 97710fcf8164ce11c64bf0d524e75eadca8c0c75
   branch: master
@@ -24,34 +56,10 @@ GIT
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
 
-PATH
-  remote: ../chef_core-actions
-  specs:
-    chef_core-actions (0.0.1)
-      chef-config
-      chef_core
-
-PATH
-  remote: ../chef_core-cliux
-  specs:
-    chef_core-cliux (0.0.1)
-      chef_core
-      pastel
-      tty-color
-      tty-cursor
-      tty-spinner
-
-PATH
-  remote: ../chef_core
-  specs:
-    chef_core (0.0.1)
-      chef-telemetry
-      mixlib-log
-      r18n-desktop
-      train (~> 2.0)
-
-PATH
-  remote: ../train
+GIT
+  remote: https://github.com/marcparadise/train
+  revision: 97a0345f8fef398ef6a8b746ec98c3ab16db6e38
+  branch: SUSTAIN-955/winrm_operation_timeout
   specs:
     train (2.0.4)
       azure_graph_rbac (~> 0.16)
