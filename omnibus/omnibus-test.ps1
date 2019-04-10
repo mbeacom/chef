@@ -34,4 +34,5 @@ $Env:PROJECT_NAME = $product
 
 Write-Output "Running verification for $product"
 
+Set-ExecutionPolicy Bypass -Scope Process -Force
 ci/verify-chef.bat
