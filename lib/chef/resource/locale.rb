@@ -24,6 +24,7 @@ class Chef
 
       description "Use the locale resource to set the system's locale."
       introduced "14.5"
+      provides :locale, platform_family: %w{rhel fedora amazon debian}
 
       LC_VARIABLES = %w{LC_ADDRESS LC_COLLATE LC_CTYPE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE LC_TIME}.freeze
       LOCALE_CONF = "/etc/locale.conf".freeze

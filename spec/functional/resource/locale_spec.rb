@@ -18,7 +18,7 @@
 
 require "spec_helper"
 
-describe Chef::Resource::Locale, :requires_root, :not_supported_on_windows do
+describe Chef::Resource::Locale, :requires_root, :not_supported_on_windows, :not_supported_on_macos do
 
   let(:node) { Chef::Node.new }
   let(:events) { Chef::EventDispatch::Dispatcher.new }
